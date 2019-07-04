@@ -25,7 +25,7 @@ MonoBehaviour:
   Back: {fileID: 0}
   PageLeft: {fileID: 0}
   PageRight: {fileID: 0}
-  Add: {fileID: 0}
+  Add: {fileID: 2800000, guid: 269c1f1f748d98f41b081da317bdc89a, type: 3}
   Remove: {fileID: 0}
   Clear: {fileID: 0}
   Cancel: {fileID: 0}
@@ -61,3 +61,4 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 8867ef317bf86c142897904dbb7a1ac6, type: 3}
   - {fileID: 2800000, guid: 1756676fd64b61e4a914ffa70233b9a6, type: 3}
   - {fileID: 2800000, guid: 7029cbbbce5f0ac4dbc4e93267bfddf4, type: 3}
+  - {fileID: 2800000, guid: 269c1f1f748d98f41b081da317bdc89a, type: 3}

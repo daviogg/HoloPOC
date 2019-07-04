@@ -12,25 +12,25 @@ public class VideoPlayerManager : MonoBehaviour, IFocusable {
 	private bool isOnFocus;
 	private void Awake()
 	{
-		handDraggable = gameObject.GetComponentInParent<HandDraggable>();
+		handDraggable = gameObject.transform.parent.transform.gameObject.GetComponentInParent<HandDraggable>();
 	}
 
 	void Start () {
 		
 	}
 
-	void Update () {
-		if (handDraggable.isDragging && isOnFocus)
+	void FixedUpdate () {
+		if (handDraggable.isDraggingUpdate && isOnFocus && Video.isPlaying)
 			Video.Pause();
 		
-		if(!handDraggable.isDragging && isOnFocus)
+		if(!handDraggable.isDraggingUpdate && isOnFocus && !Video.isPlaying)
 			Video.Play();
 	}
 
 	public void OnFocusEnter()
 	{
 		isOnFocus = true;
-		Video.Play();
+		//Video.Play();
 	}
 
 	public void OnFocusExit()
